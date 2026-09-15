@@ -1,0 +1,719 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f8f7ff;
+
+    color: #18213d;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    height: 68px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8e8ef;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 34px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.logo {
+    color: #075bd8;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.logo span {
+    color: #00ccdb;
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+    background: #edf0f7;
+
+    color: #51586c;
+
+    border-radius: 7px;
+
+    padding: 5px 9px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   HEADER RIGHT
+========================= */
+
+.header-right {
+    display: flex;
+
+    align-items: center;
+}
+
+.secure {
+    background: #f0f7ef;
+
+    color: #566b59;
+
+    border-radius: 16px;
+
+    padding: 7px 12px;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    width: 100%;
+
+    min-height: calc(100vh - 68px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+
+/* =========================
+   SUCCESS CARD
+========================= */
+
+.success-card {
+    width: 510px;
+
+    max-width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e3eb;
+
+    border-radius: 14px;
+
+    padding: 42px 34px 34px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 18px rgba(50, 60, 100, 0.04);
+
+    opacity: 0;
+
+    transform:
+        translateY(25px)
+        scale(0.97);
+
+    animation:
+        cardEntrada 0.7s ease-out forwards;
+}
+
+
+/* =========================
+   ÍCONE DE SUCESSO
+========================= */
+
+.success-icon {
+    width: 88px;
+
+    height: 88px;
+
+    margin: 0 auto 28px;
+
+    border-radius: 50%;
+
+    background: #eaf8f0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    animation:
+        iconEntrada 0.6s ease-out 0.3s both;
+}
+
+
+/* círculo externo */
+
+.success-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 88px;
+
+    height: 88px;
+
+    border-radius: 50%;
+
+    border: 2px solid #35b879;
+
+    opacity: 0;
+
+    animation:
+        pulse 1.8s ease-out 0.8s infinite;
+}
+
+
+/* =========================
+   CHECK
+========================= */
+
+.check {
+    width: 58px;
+
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #35b879;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 31px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    box-shadow:
+        0 6px 15px rgba(53, 184, 121, 0.25);
+
+    transform: scale(0);
+
+    animation:
+        checkEntrada 0.5s
+        cubic-bezier(.34, 1.56, .64, 1)
+        0.6s forwards;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.success-content {
+    animation:
+        textEntrada 0.6s ease-out 0.8s both;
+}
+
+
+.success-content h1 {
+    color: #20283c;
+
+    font-size: 28px;
+
+    line-height: 34px;
+
+    margin-bottom: 8px;
+}
+
+
+.success-content h2 {
+    color: #2867e9;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    margin-bottom: 14px;
+}
+
+
+.success-content p {
+    max-width: 390px;
+
+    margin: 0 auto;
+
+    color: #62697a;
+
+    font-size: 12px;
+
+    line-height: 19px;
+}
+
+
+/* =========================
+   INFO BOX
+========================= */
+
+.success-info {
+    width: 100%;
+
+    min-height: 67px;
+
+    margin-top: 28px;
+
+    padding: 12px 15px;
+
+    background: #f4f8ff;
+
+    border: 1px solid #dce7fc;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: left;
+
+    gap: 12px;
+
+    animation:
+        textEntrada 0.6s ease-out 1s both;
+}
+
+
+/* =========================
+   INFO ICON
+========================= */
+
+.info-icon {
+    width: 31px;
+
+    height: 31px;
+
+    min-width: 31px;
+
+    border-radius: 50%;
+
+    background: #2867e9;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   INFO TEXT
+========================= */
+
+.success-info div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.success-info strong {
+    color: #35415c;
+
+    font-size: 11px;
+}
+
+
+.success-info small {
+    color: #747d90;
+
+    font-size: 9px;
+
+    line-height: 14px;
+}
+
+
+/* =========================
+   CONTINUE BUTTON
+========================= */
+
+.continue-button {
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 22px;
+
+    border-radius: 9px;
+
+    background: #2867e9;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    box-shadow:
+        0 2px 6px rgba(30, 90, 210, 0.2);
+
+    opacity: 0;
+
+    animation:
+        buttonEntrada 0.6s ease-out 1.1s forwards;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.continue-button span {
+    font-size: 18px;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.continue-button:hover {
+    background: #1e5cda;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px rgba(40, 103, 233, 0.25);
+}
+
+
+.continue-button:hover span {
+    transform: translateX(4px);
+}
+
+
+.continue-button:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 22px;
+
+    color: #747987;
+
+    font-size: 9px;
+
+    line-height: 14px;
+
+    opacity: 0;
+
+    animation:
+        textEntrada 0.6s ease-out 1.2s forwards;
+}
+
+
+footer span {
+    color: #687080;
+}
+
+
+/* =========================
+   ANIMAÇÕES
+========================= */
+
+@keyframes cardEntrada {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateY(25px)
+            scale(0.97);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+@keyframes iconEntrada {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            scale(0.5)
+            rotate(-15deg);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            scale(1)
+            rotate(0);
+    }
+
+}
+
+
+@keyframes checkEntrada {
+
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+@keyframes pulse {
+
+    0% {
+        opacity: 0.7;
+
+        transform: scale(1);
+    }
+
+    70% {
+        opacity: 0;
+
+        transform: scale(1.45);
+    }
+
+    100% {
+        opacity: 0;
+
+        transform: scale(1.45);
+    }
+
+}
+
+
+@keyframes textEntrada {
+
+    0% {
+        opacity: 0;
+
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes buttonEntrada {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateY(12px);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        height: 60px;
+
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .secure {
+        display: none;
+    }
+
+    .main {
+        min-height: calc(100vh - 60px);
+
+        padding:
+            25px 15px;
+    }
+
+    .success-card {
+        width: 100%;
+
+        padding:
+            34px 24px 28px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .success-card {
+        padding:
+            30px 18px 24px;
+    }
+
+    .success-icon {
+        width: 76px;
+
+        height: 76px;
+
+        margin-bottom: 23px;
+    }
+
+    .success-icon::before {
+        width: 76px;
+
+        height: 76px;
+    }
+
+    .check {
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 27px;
+    }
+
+    .success-content h1 {
+        font-size: 25px;
+    }
+
+    .success-content h2 {
+        font-size: 14px;
+    }
+
+    .success-content p {
+        font-size: 11px;
+    }
+
+    .success-info {
+        min-height: 65px;
+
+        padding: 11px;
+    }
+
+    .continue-button {
+        height: 49px;
+
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 0 10px;
+    }
+
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MedTech - Criar sua conta</title>
+
+    <link
+        rel="stylesheet"
+        href="cadastro.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="logo-area">
+
+            <span class="logo">
+                Med<span>Tech</span>
+            </span>
+
+            <span class="badge">
+                Saúde & Autonomia
+            </span>
+
+        </div>
+
+
+        <div class="header-right">
+
+            <span class="secure">
+                🛡 Ambiente Seguro
+            </span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <main class="main">
+
+
+        <!-- =========================
+             CARD
+        ========================== -->
+
+        <section class="register-card">
+
+
+            <!-- LOGO -->
+
+            <h1>
+                Med<span>Tech</span>
+            </h1>
+
+
+            <p class="subtitle">
+                Seu tratamento, no horário certo.
+            </p>
+
+
+
+            <!-- =========================
+                 TÍTULO
+            ========================== -->
+
+            <div class="title-area">
+
+                <h2>
+                    Criar sua conta
+                </h2>
+
+                <p>
+                    Cadastre-se para começar a organizar sua rotina de<br>
+                    medicamentos.
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FORMULÁRIO
+            ========================== -->
+
+            <form>
+
+
+                <!-- =========================
+                     TIPO DE USUÁRIO
+                ========================== -->
+
+                <div class="user-type">
+
+                    <label class="user-label">
+                        Eu sou:
+                    </label>
+
+
+                    <div class="user-options">
+
+
+                        <!-- PACIENTE -->
+
+                        <label class="user-option">
+
+                            <input
+                                type="radio"
+                                name="tipo"
+                                value="paciente"
+                            >
+
+                            <div class="radio-icon">
+                                ○
+                            </div>
+
+                            <div class="user-text">
+
+                                <strong>
+                                    Paciente
+                                </strong>
+
+                                <small>
+                                    Para meu próprio uso
+                                </small>
+
+                            </div>
+
+                        </label>
+
+
+
+                        <!-- CUIDADOR / FAMILIAR -->
+
+                        <label class="user-option">
+
+                            <input
+                                type="radio"
+                                name="tipo"
+                                value="cuidador"
+                            >
+
+                            <div class="radio-icon">
+                                ○
+                            </div>
+
+                            <div class="user-text">
+
+                                <strong>
+                                    Cuidador /<br>
+                                    Familiar
+                                </strong>
+
+                                <small>
+                                    Para ajudar alguém
+                                </small>
+
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     NOME
+                ========================== -->
+
+                <div class="form-group">
+
+                    <label for="nome">
+                        Nome completo
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                        </span>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Ex: João da Silva"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     EMAIL
+                ========================== -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            ✉
+                        </span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="joao@email.com"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     SENHA
+                ========================== -->
+
+                <div class="form-group">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                        </span>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            placeholder="Mínimo 6 caracteres"
+                        >
+
+                        <button
+                            type="button"
+                            class="eye"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+                    <small class="password-info">
+                        Use pelo menos 6 números ou letras fáceis de lembrar
+                    </small>
+
+                </div>
+
+
+
+                <!-- =========================
+                     CONFIRMAR SENHA
+                ========================== -->
+
+                <div class="form-group">
+
+                    <label for="confirmar">
+                        Confirmar senha
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                        </span>
+
+                        <input
+                            type="password"
+                            id="confirmar"
+                            placeholder="Repita sua senha"
+                        >
+
+                        <button
+                            type="button"
+                            class="eye"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     TERMOS
+                ========================== -->
+
+                <label class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="termos"
+                    >
+
+                    <span>
+
+                        Li e aceito os
+
+                        <a href="#">
+                            Termos de Uso
+                        </a>
+
+                        e a
+
+                        <a href="#">
+                            Política de Privacidade
+                        </a>
+
+                        de<br>
+
+                        dados de saúde.
+
+                    </span>
+
+                </label>
+
+
+
+                <!-- =========================
+                     CRIAR CONTA
+                ========================== -->
+
+                <a
+                    href="sucesso.html"
+                    class="create-button"
+                >
+                    ♙ Criar conta
+                </a>
+
+
+            </form>
+
+
+
+            <!-- =========================
+                 DIVISOR
+            ========================== -->
+
+            <div class="divider">
+
+                <span></span>
+
+                <p>
+                    OU
+                </p>
+
+                <span></span>
+
+            </div>
+
+
+
+            <!-- =========================
+                 LOGIN
+            ========================== -->
+
+            <a
+                href="login.html"
+                class="login-button"
+            >
+                Já tenho uma conta? Fazer login
+            </a>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            <p>
+                © 2025 MedControl Saúde Digital. Todos os direitos reservados.
+            </p>
+
+            <span>
+                ◉ Conexão criptografada ponta a ponta (SSL/TLS).
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="cadastro.js"></script>
+
+
+</body>
+
+</html>

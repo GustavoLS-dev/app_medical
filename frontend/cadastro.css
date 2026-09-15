@@ -1,0 +1,839 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f8f7ff;
+
+    color: #18213d;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    height: 68px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8e8ef;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 34px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.logo {
+    color: #075bd8;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.logo span {
+    color: #00ccdb;
+}
+
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+    background: #edf0f7;
+
+    color: #51586c;
+
+    border-radius: 7px;
+
+    padding: 5px 9px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   HEADER RIGHT
+========================= */
+
+.header-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    font-size: 12px;
+}
+
+.secure {
+    background: #f0f7ef;
+
+    color: #566b59;
+
+    border-radius: 16px;
+
+    padding: 7px 12px;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    width: 100%;
+
+    min-height: calc(100vh - 68px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding-top: 44px;
+
+    padding-bottom: 35px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.register-card {
+    width: 510px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e3eb;
+
+    border-radius: 14px;
+
+    padding: 34px;
+
+    box-shadow:
+        0 4px 18px rgba(50, 60, 100, 0.04);
+
+    opacity: 0;
+
+    transform: translateY(25px) scale(0.97);
+
+    animation: cardEntrada 0.7s ease-out forwards;
+}
+
+
+/* =========================
+   LOGO PRINCIPAL
+========================= */
+
+.register-card h1 {
+    text-align: center;
+
+    color: #18213d;
+
+    font-size: 38px;
+
+    line-height: 40px;
+
+    font-weight: 700;
+}
+
+.register-card h1 span {
+    color: #00ccdb;
+}
+
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle {
+    margin-top: 5px;
+
+    text-align: center;
+
+    color: #222a3b;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.title-area {
+    text-align: center;
+
+    margin-top: 35px;
+
+    margin-bottom: 28px;
+}
+
+.title-area h2 {
+    font-size: 25px;
+
+    color: #20283c;
+
+    margin-bottom: 9px;
+}
+
+.title-area p {
+    color: #555b6b;
+
+    font-size: 13px;
+
+    line-height: 19px;
+}
+
+
+/* =========================
+   USER TYPE
+========================= */
+
+.user-type {
+    margin-bottom: 22px;
+}
+
+.user-label {
+    display: block;
+
+    color: #20283d;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.user-options {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.user-option {
+    min-height: 70px;
+
+    border: 1px solid #d6d9e3;
+
+    border-radius: 9px;
+
+    padding: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.user-option:hover {
+    border-color: #2868ed;
+
+    background: #f7faff;
+
+    transform: translateY(-1px);
+}
+
+.user-option input {
+    display: none;
+}
+
+.radio-icon {
+    font-size: 22px;
+
+    color: #8a91a2;
+
+    line-height: 1;
+}
+
+.user-option:has(input:checked) {
+    border-color: #2868ed;
+
+    background: #f4f8ff;
+}
+
+.user-option:has(input:checked) .radio-icon {
+    color: #2868ed;
+}
+
+.user-text {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.user-text strong {
+    color: #20283d;
+
+    font-size: 11px;
+}
+
+.user-text small {
+    color: #747b8d;
+
+    font-size: 9px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+
+    margin-bottom: 17px;
+}
+
+.form-group > label {
+    display: block;
+
+    color: #20283d;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-wrapper {
+    width: 100%;
+
+    height: 50px;
+
+    border: 1px solid #bdc4d5;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 14px;
+
+    background: #ffffff;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+    transform: translateY(-1px);
+
+    border-color: #2868ed;
+
+    box-shadow:
+        0 0 0 3px rgba(40, 104, 237, 0.10);
+}
+
+.input-icon {
+    width: 28px;
+
+    min-width: 28px;
+
+    color: #687188;
+
+    font-size: 17px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+
+    height: 100%;
+
+    border: none !important;
+
+    outline: none !important;
+
+    background: transparent !important;
+
+    color: #20283d;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    padding: 0;
+
+    margin: 0;
+
+    box-shadow: none !important;
+}
+
+.input-wrapper input::placeholder {
+    color: #969cac;
+}
+
+
+/* =========================
+   PASSWORD INFO
+========================= */
+
+.password-info {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #7a8090;
+
+    font-size: 9px;
+
+    line-height: 14px;
+}
+
+
+/* =========================
+   EYE
+========================= */
+
+.eye {
+    width: 30px;
+
+    height: 30px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #596174;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+.eye:hover {
+    color: #2868ed;
+
+    transform: scale(1.15);
+}
+
+
+/* =========================
+   TERMOS
+========================= */
+
+.terms {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin-top: 4px;
+
+    color: #62697a;
+
+    font-size: 10px;
+
+    line-height: 15px;
+
+    cursor: pointer;
+}
+
+.terms input {
+    width: 15px;
+
+    height: 15px;
+
+    flex-shrink: 0;
+
+    margin-top: 1px;
+
+    accent-color: #2868eb;
+
+    cursor: pointer;
+}
+
+.terms a {
+    color: #145dd9;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CRIAR CONTA
+   ÂNCORA
+========================= */
+
+.create-button {
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 22px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #2867e9;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow:
+        0 2px 6px rgba(30, 90, 210, 0.2);
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.create-button:hover {
+    background: #1e5cda;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px rgba(40, 103, 233, 0.25);
+}
+
+.create-button:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   DIVISOR
+========================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin: 32px 0 22px;
+}
+
+.divider span {
+    flex: 1;
+
+    height: 1px;
+
+    background: #e5e6eb;
+}
+
+.divider p {
+    color: #9095a2;
+
+    font-size: 10px;
+}
+
+
+/* =========================
+   LOGIN
+   ÂNCORA
+========================= */
+
+.login-button {
+    width: 100%;
+
+    height: 50px;
+
+    border: 2px solid #2164e7;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #145dd9;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.login-button:hover {
+    background: #f5f8ff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 13px rgba(40, 104, 237, 0.10);
+}
+
+.login-button:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 22px;
+
+    color: #747987;
+
+    font-size: 9px;
+
+    line-height: 14px;
+}
+
+footer span {
+    color: #687080;
+}
+
+
+/* =========================
+   ANIMAÇÃO
+========================= */
+
+@keyframes cardEntrada {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateY(30px)
+            scale(0.97);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        height: 60px;
+
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .secure {
+        display: none;
+    }
+
+    .main {
+        min-height: calc(100vh - 60px);
+
+        padding-top: 25px;
+
+        padding-bottom: 25px;
+    }
+
+    .register-card {
+        width: calc(100% - 30px);
+
+        max-width: 510px;
+
+        padding: 28px 24px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .header-right {
+        display: none;
+    }
+
+    .register-card {
+        width: calc(100% - 20px);
+
+        padding: 24px 18px;
+    }
+
+    .register-card h1 {
+        font-size: 31px;
+
+        line-height: 34px;
+    }
+
+    .subtitle {
+        font-size: 11px;
+    }
+
+    .title-area {
+        margin-top: 30px;
+
+        margin-bottom: 24px;
+    }
+
+    .title-area h2 {
+        font-size: 21px;
+    }
+
+    .title-area p {
+        font-size: 11px;
+    }
+
+    .user-options {
+        grid-template-columns: 1fr;
+    }
+
+    .input-wrapper {
+        height: 47px;
+    }
+
+    .create-button {
+        height: 49px;
+    }
+
+    .login-button {
+        height: 47px;
+    }
+
+    footer {
+        padding: 0 15px;
+    }
+
+}
