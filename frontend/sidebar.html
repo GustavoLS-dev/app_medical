@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MedTech</title>
+
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <!-- LOGO -->
+        <div class="brand">
+
+            <div class="brand-icon">
+                +
+            </div>
+
+            <div class="brand-text">
+
+                <div class="brand-name">
+                    MedTech
+                </div>
+
+                <div class="brand-subtitle">
+                    Seu tratamento, no horário certo.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENU -->
+        <nav class="menu" id="menu">
+
+            <!--
+                Esse elemento é o fundo azul
+                que desliza entre os botões.
+            -->
+            <div
+                class="selection"
+                id="selection">
+            </div>
+
+
+            <!-- DASHBOARD -->
+            <a
+                href="dashboard.html"
+                class="menu-item"
+                data-page="dashboard"
+            >
+                <span class="menu-icon">▦</span>
+                <span>Dashboard</span>
+            </a>
+
+
+            <!-- MEDICAMENTOS -->
+            <a
+                href="medicamentos.html"
+                class="menu-item"
+                data-page="medicamentos"
+            >
+                <span class="menu-icon">▣</span>
+                <span>Medicamentos</span>
+            </a>
+
+
+            <!-- HORÁRIOS -->
+            <a
+                href="horarios.html"
+                class="menu-item"
+                data-page="horarios"
+            >
+                <span class="menu-icon">◷</span>
+                <span>Horários</span>
+            </a>
+
+
+            <!-- ESTOQUE -->
+            <a
+                href="estoque.html"
+                class="menu-item"
+                data-page="estoque"
+            >
+                <span class="menu-icon">▤</span>
+                <span>Estoque</span>
+            </a>
+
+
+            <!-- HISTÓRICO -->
+            <a
+                href="historico.html"
+                class="menu-item"
+                data-page="historico"
+            >
+                <span class="menu-icon">↩</span>
+                <span>Histórico</span>
+            </a>
+
+
+            <!-- DISPENSADOR -->
+            <a
+                href="dispensador.html"
+                class="menu-item"
+                data-page="dispensador"
+            >
+                <span class="menu-icon">♟</span>
+                <span>Dispensador</span>
+            </a>
+
+        </nav>
+
+
+        <!-- USUÁRIO -->
+        <div class="user-card">
+
+            <div class="user-name">
+
+                <span class="status"></span>
+
+                João Silva (Paciente)
+
+            </div>
+
+
+            <div class="connection">
+                Dispensador Conectado
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <script src="sidebar.js"></script>
+
+</body>
+
+</html>

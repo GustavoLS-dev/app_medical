@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>MedControl - Medicamentos</title>
+
+    <!-- CSS DA SIDEBAR -->
+    <link
+        rel="stylesheet"
+        href="sidebar.css"
+    >
+
+    <!-- CSS DA PÁGINA -->
+    <link
+        rel="stylesheet"
+        href="medicamentos.css"
+    >
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- SIDEBAR -->
+    <!-- ===================================================== -->
+
+    <div id="sidebarContainer"></div>
+
+
+    <!-- ===================================================== -->
+    <!-- CONTEÚDO PRINCIPAL -->
+    <!-- ===================================================== -->
+
+    <main class="main-content">
+
+        <!-- ================================================= -->
+        <!-- CABEÇALHO -->
+        <!-- ================================================= -->
+
+        <header class="page-header">
+
+            <div class="header-information">
+
+                <span class="page-label">
+                    GERENCIAMENTO
+                </span>
+
+                <h1>
+                    Medicamentos
+                </h1>
+
+                <p>
+                    Gerencie os medicamentos cadastrados
+                    no seu dispensador inteligente.
+                </p>
+
+            </div>
+
+
+            <!-- ============================================= -->
+            <!-- BOTÃO ADICIONAR -->
+            <!-- ============================================= -->
+
+            <a
+                href="#"
+                id="abrirAdicionarMed"
+                class="primary-button"
+            >
+                <span>+</span>
+
+                Adicionar medicamento
+            </a>
+
+        </header>
+
+
+        <!-- ================================================= -->
+        <!-- GRID DE MEDICAMENTOS -->
+        <!-- ================================================= -->
+
+        <section class="medications-grid">
+        </section>
+
+    </main>
+
+
+    <!-- ===================================================== -->
+    <!-- POPUP - ADICIONAR MEDICAMENTO -->
+    <!-- ===================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="adicionarMedModal"
+    >
+
+        <div class="modal-card">
+
+
+            <!-- ================================================= -->
+            <!-- CABEÇALHO DO MODAL -->
+            <!-- ================================================= -->
+
+            <div class="modal-header">
+
+                <div class="modal-header-information">
+
+                    <span class="modal-label">
+                        NOVO MEDICAMENTO
+                    </span>
+
+                    <h2>
+                        Adicionar medicamento
+                    </h2>
+
+                    <p>
+                        Cadastre um novo medicamento
+                        no seu dispensador inteligente.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="#"
+                    id="fecharAdicionarMed"
+                    class="modal-close"
+                    aria-label="Fechar"
+                >
+                    ×
+                </a>
+
+            </div>
+
+
+            <!-- ================================================= -->
+            <!-- FORMULÁRIO -->
+            <!-- ================================================= -->
+
+            <form
+                id="formAdicionarMedicamento"
+            >
+
+
+                <!-- ============================================= -->
+                <!-- NOME -->
+                <!-- ============================================= -->
+
+                <div class="form-group">
+
+                    <label for="nomeMedicamento">
+                        Nome do medicamento
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nomeMedicamento"
+                        placeholder="Ex: Losartana Potássica"
+                        autocomplete="off"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- ============================================= -->
+                <!-- DOSAGEM + QUANTIDADE -->
+                <!-- ============================================= -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="dosagemMedicamento">
+                            Dosagem
+                        </label>
+
+                        <input
+                            type="text"
+                            id="dosagemMedicamento"
+                            placeholder="Ex: 50 mg"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="estoqueMedicamento">
+                            Quantidade
+                        </label>
+
+                        <input
+                            type="number"
+                            id="estoqueMedicamento"
+                            placeholder="Ex: 30"
+                            min="1"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- ============================================= -->
+                <!-- TIPO -->
+                <!-- ============================================= -->
+
+                <div class="form-group">
+
+                    <label>
+                        Tipo de medicamento
+                    </label>
+
+
+                    <div class="presentation-options">
+
+
+                        <!-- COMPRIMIDO -->
+
+                        <a
+                            href="#"
+                            class="presentation-option"
+                            data-tipo="Comprimido"
+                        >
+
+                            <span class="presentation-icon">
+                                💊
+                            </span>
+
+                            <strong>
+                                Comprimido
+                            </strong>
+
+                        </a>
+
+
+                        <!-- CÁPSULA -->
+
+                        <a
+                            href="#"
+                            class="presentation-option"
+                            data-tipo="Cápsula"
+                        >
+
+                            <span class="presentation-icon">
+                                💊
+                            </span>
+
+                            <strong>
+                                Cápsula
+                            </strong>
+
+                        </a>
+
+
+                        <!-- LÍQUIDO -->
+
+                        <a
+                            href="#"
+                            class="presentation-option"
+                            data-tipo="Líquido"
+                        >
+
+                            <span class="presentation-icon">
+                                🧴
+                            </span>
+
+                            <strong>
+                                Líquido
+                            </strong>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ============================================= -->
+                <!-- FREQUÊNCIA + HORÁRIO -->
+                <!-- ============================================= -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="frequenciaMedicamento">
+                            Frequência
+                        </label>
+
+                        <select
+                            id="frequenciaMedicamento"
+                            required
+                        >
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="1x/dia">
+                                1x por dia
+                            </option>
+
+                            <option value="2x/dia">
+                                2x por dia
+                            </option>
+
+                            <option value="3x/dia">
+                                3x por dia
+                            </option>
+
+                            <option value="4x/dia">
+                                4x por dia
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="horarioMedicamento">
+                            Horário
+                        </label>
+
+                        <input
+                            type="time"
+                            id="horarioMedicamento"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- ============================================= -->
+                <!-- BOTÕES -->
+                <!-- ============================================= -->
+
+                <div class="modal-actions">
+
+
+                    <a
+                        href="#"
+                        id="cancelarAdicionarMed"
+                        class="secondary-button"
+                    >
+                        Cancelar
+                    </a>
+
+
+                    <a
+                        href="#"
+                        id="salvarMedicamento"
+                        class="primary-button"
+                    >
+
+                        <span>
+                            +
+                        </span>
+
+                        Adicionar medicamento
+
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ===================================================== -->
+
+    <script src="medicamentos.js"></script>
+
+    <script src="sidebar.js"></script>
+
+</body>
+
+</html>

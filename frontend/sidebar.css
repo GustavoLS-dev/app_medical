@@ -1,0 +1,308 @@
+/* =========================================
+   SIDEBAR MEDTECH
+========================================= */
+
+.medtech-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 230px;
+    height: 100vh;
+
+    padding: 14px 9px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-right: 1px solid #e5e7eb;
+
+    z-index: 9999;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "SF Pro Text",
+        "Segoe UI",
+        sans-serif;
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.medtech-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 7px;
+
+    margin-bottom: 22px;
+}
+
+
+.medtech-brand-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #2864e8;
+
+    color: #fff;
+
+    font-size: 24px;
+    font-weight: 500;
+
+    box-shadow:
+        0 3px 8px rgba(37, 99, 235, .20);
+}
+
+
+.medtech-brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.medtech-brand-name {
+    color: #1461df;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    letter-spacing: -.4px;
+}
+
+
+.medtech-brand-subtitle {
+    margin-top: 1px;
+
+    color: #111827;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.medtech-menu {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+/* =========================================
+   SELEÇÃO AZUL
+========================================= */
+
+.medtech-selection {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 43px;
+
+    background: #e1e9ff;
+
+    border-left: 3px solid #1769ff;
+
+    border-radius: 10px;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    transform: translateY(0);
+
+    transition:
+        transform 550ms cubic-bezier(
+            .22,
+            1,
+            .36,
+            1
+        );
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.medtech-menu-item {
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 15px;
+
+    border: 0;
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #111827;
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        color 200ms ease,
+        transform 150ms ease;
+}
+
+
+.medtech-menu-item:hover {
+    color: #075fe5;
+}
+
+
+.medtech-menu-item:active {
+    transform: scale(.98);
+}
+
+
+.medtech-menu-item.active {
+    color: #075fe5;
+}
+
+
+.medtech-menu-icon {
+    width: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   USUÁRIO
+========================================= */
+
+.medtech-user {
+    margin-top: auto;
+
+    padding: 13px 10px;
+
+    border-radius: 8px;
+
+    background: #f0f3ff;
+
+    border: 1px solid #d6ddf5;
+}
+
+
+.medtech-user-name {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    color: #172033;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.medtech-status {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #00a94f;
+}
+
+
+.medtech-connection {
+    margin-top: 4px;
+    margin-left: 13px;
+
+    color: #009c50;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   ESPAÇO PARA A SIDEBAR
+=========================================
+
+   Se sua página tem conteúdo ocupando
+   a tela inteira, adicione:
+
+   body {
+       padding-left: 230px;
+   }
+
+========================================= */
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .medtech-sidebar {
+        width: 75px;
+    }
+
+
+    .medtech-brand {
+        justify-content: center;
+    }
+
+
+    .medtech-brand-text,
+    .medtech-menu-item span:not(.medtech-menu-icon),
+    .medtech-user {
+        display: none;
+    }
+
+
+    .medtech-menu-item {
+        justify-content: center;
+
+        padding: 0;
+    }
+}
