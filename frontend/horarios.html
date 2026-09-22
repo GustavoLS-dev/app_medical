@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Horários | MedControl</title>
+
+    <link rel="stylesheet" href="horarios.css">
+
+    <!-- CSS DA SIDEBAR -->
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <link rel="stylesheet" href="sidebar.html">
+
+
+    <main class="horarios-page">
+
+        <!-- =====================================================
+             CABEÇALHO
+        ====================================================== -->
+
+        <section class="page-header">
+
+            <div class="header-content">
+
+                <span class="header-label">
+                    GERENCIAMENTO
+                </span>
+
+                <h1>Horários</h1>
+
+                <p>
+                    Organize os horários dos seus medicamentos e acompanhe suas doses.
+                </p>
+
+            </div>
+
+
+            <a href="#" class="add-button" id="addHorario">
+                <span>+</span>
+                Adicionar horário
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             RESUMO
+        ====================================================== -->
+
+        <section class="summary-grid">
+
+            <!-- Doses -->
+            <article class="summary-card">
+
+                <div class="summary-icon blue">
+                    📅
+                </div>
+
+                <div>
+                    <span>Doses de Hoje</span>
+
+                    <strong id="totalHorarios">
+                        5
+                    </strong>
+
+                    <small>
+                        horários
+                    </small>
+                </div>
+
+            </article>
+
+
+            <!-- Concluídos -->
+            <article class="summary-card">
+
+                <div class="summary-icon green">
+                    ✓
+                </div>
+
+                <div>
+                    <span>Concluídos</span>
+
+                    <strong id="totalConcluidos">
+                        0
+                    </strong>
+
+                    <small>
+                        tomados
+                    </small>
+                </div>
+
+            </article>
+
+
+            <!-- Pendentes -->
+            <article class="summary-card">
+
+                <div class="summary-icon orange">
+                    !
+                </div>
+
+                <div>
+                    <span>Atenção Agora</span>
+
+                    <strong id="totalPendentes">
+                        3
+                    </strong>
+
+                    <small>
+                        pendentes
+                    </small>
+                </div>
+
+            </article>
+
+
+            <!-- Programados -->
+            <article class="summary-card">
+
+                <div class="summary-icon purple">
+                    ⏳
+                </div>
+
+                <div>
+                    <span>Aguardando</span>
+
+                    <strong id="totalProgramados">
+                        2
+                    </strong>
+
+                    <small>
+                        programados
+                    </small>
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             LINHA DO TEMPO
+        ====================================================== -->
+
+        <section class="timeline-section">
+
+            <div class="timeline-header">
+
+                <div>
+                    <h2>
+                        Linha do Tempo de Hoje
+                    </h2>
+                </div>
+
+                <span class="date-badge">
+                    Segunda-feira, 24 de Outubro
+                </span>
+
+            </div>
+
+
+
+            <div class="timeline">
+
+
+                <!-- =================================================
+                     08:00 - LOSARTANA
+                ================================================== -->
+
+                <article class="timeline-item pending">
+
+                    <div class="timeline-marker">
+                        !
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <!-- HORÁRIO -->
+                        <div class="time-box">
+
+                            <span>
+                                HORÁRIO
+                            </span>
+
+                            <strong>
+                                08:00
+                            </strong>
+
+                        </div>
+
+
+                        <!-- MEDICAMENTO -->
+                        <div class="medicine-info">
+
+                            <div class="medicine-title">
+
+                                <h3>
+                                    Losartana 50 mg
+                                </h3>
+
+                                <span class="status pending-status">
+                                    ● Pendente
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                1 comprimido via oral com água • Uso contínuo para hipertensão
+                            </p>
+
+
+                            <small class="responsible">
+                                💊 Dispensador: Compartimento 06:08
+                            </small>
+
+                        </div>
+
+
+                        <!-- BOTÕES -->
+                        <div class="card-actions">
+
+                            <a href="#" class="take-button">
+                                ✓ Registrar Tomado
+                            </a>
+
+                            <a href="#" class="action-button edit">
+                                ✎ Editar
+                            </a>
+
+                            <a href="#" class="action-button delete">
+                                Excluir
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     12:00 - VITAMINA D
+                ================================================== -->
+
+                <article class="timeline-item pending">
+
+                    <div class="timeline-marker">
+                        !
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <!-- HORÁRIO -->
+                        <div class="time-box">
+
+                            <span>
+                                HORÁRIO
+                            </span>
+
+                            <strong>
+                                12:00
+                            </strong>
+
+                        </div>
+
+
+                        <!-- MEDICAMENTO -->
+                        <div class="medicine-info">
+
+                            <div class="medicine-title">
+
+                                <h3>
+                                    Vitamina D 1000 UI
+                                </h3>
+
+                                <span class="status pending-status">
+                                    ● Pendente
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                1 cápsula gelatina junto ao almoço
+                            </p>
+
+
+                            <small class="responsible">
+                                💊 Dispensador: Gaveta 2
+                            </small>
+
+                        </div>
+
+
+                        <!-- BOTÕES -->
+                        <div class="card-actions">
+
+                            <a href="#" class="take-button">
+                                ✓ Registrar Tomado
+                            </a>
+
+                            <a href="#" class="action-button edit">
+                                ✎ Editar
+                            </a>
+
+                            <a href="#" class="action-button delete">
+                                Excluir
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     14:00 - METFORMINA
+                ================================================== -->
+
+                <article class="timeline-item pending">
+
+                    <div class="timeline-marker">
+                        !
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <!-- HORÁRIO -->
+                        <div class="time-box current">
+
+                            <span>
+                                AGORA
+                            </span>
+
+                            <strong>
+                                14:00
+                            </strong>
+
+                        </div>
+
+
+                        <!-- MEDICAMENTO -->
+                        <div class="medicine-info">
+
+                            <div class="medicine-title">
+
+                                <h3>
+                                    Metformina<br>
+                                    850 mg
+                                </h3>
+
+                                <span class="status pending-status">
+                                    ● Pendente
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                1 comprimido após a refeição • controle glicêmico
+                            </p>
+
+
+                            <small class="responsible">
+                                💊 Dispensador: Compartimento Externo
+                            </small>
+
+                        </div>
+
+
+                        <!-- BOTÕES -->
+                        <div class="card-actions">
+
+                            <a href="#" class="take-button">
+                                ✓ Registrar Tomado
+                            </a>
+
+                            <a href="#" class="action-button edit">
+                                ✎ Editar
+                            </a>
+
+                            <a href="#" class="action-button delete">
+                                Excluir
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     18:00 - LOSARTANA
+                ================================================== -->
+
+                <article class="timeline-item scheduled">
+
+                    <div class="timeline-marker">
+                        ◷
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <!-- HORÁRIO -->
+                        <div class="time-box">
+
+                            <span>
+                                HORÁRIO
+                            </span>
+
+                            <strong>
+                                18:00
+                            </strong>
+
+                        </div>
+
+
+                        <!-- MEDICAMENTO -->
+                        <div class="medicine-info">
+
+                            <div class="medicine-title">
+
+                                <h3>
+                                    Losartana 50 mg
+                                </h3>
+
+                                <span class="status scheduled-status">
+                                    ◷ Programado
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                1 comprimido via oral • Segunda dose do dia
+                            </p>
+
+
+                            <small class="responsible">
+                                💊 Dispensador: Gaveta 1
+                            </small>
+
+                        </div>
+
+
+                        <!-- BOTÕES -->
+                        <div class="card-actions">
+
+                            <a href="#" class="take-button">
+                                ✓ Registrar Tomado
+                            </a>
+
+                            <a href="#" class="action-button edit">
+                                ✎ Editar
+                            </a>
+
+                            <a href="#" class="action-button delete">
+                                Excluir
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =================================================
+                     22:00 - XAROPE
+                ================================================== -->
+
+                <article class="timeline-item scheduled">
+
+                    <div class="timeline-marker">
+                        ◷
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <!-- HORÁRIO -->
+                        <div class="time-box">
+
+                            <span>
+                                HORÁRIO
+                            </span>
+
+                            <strong>
+                                22:00
+                            </strong>
+
+                        </div>
+
+
+                        <!-- MEDICAMENTO -->
+                        <div class="medicine-info">
+
+                            <div class="medicine-title">
+
+                                <h3>
+                                    Xarope 5 mL
+                                </h3>
+
+                                <span class="status scheduled-status">
+                                    ◷ Programado
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Dose líquida com medidor • Tomar antes de dormir
+                            </p>
+
+
+                            <small class="responsible">
+                                💊 Dispensador: Compartimento Externo 1
+                            </small>
+
+                        </div>
+
+
+                        <!-- BOTÕES -->
+                        <div class="card-actions">
+
+                            <a href="#" class="take-button">
+                                ✓ Registrar Tomado
+                            </a>
+
+                            <a href="#" class="action-button edit">
+                                ✎ Editar
+                            </a>
+
+                            <a href="#" class="action-button delete">
+                                Excluir
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             AVISO DO DISPENSADOR
+        ====================================================== -->
+
+        <section class="alarm-card">
+
+            <div class="alarm-icon">
+                🔊
+            </div>
+
+
+            <div class="alarm-content">
+
+                <h3>
+                    Alarmes Sonoros do Dispensador
+                </h3>
+
+                <p>
+                    O aparelho emitirá um aviso suave 5 minutos antes
+                    de cada dose agendada e abrirá automaticamente
+                    a gaveta correspondente.
+                </p>
+
+            </div>
+
+
+            <a href="#" class="test-alarm" id="testAlarm">
+                Testar Som do Alarme
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="horarios.js"></script>
+    <script src="sidebar.js"></script>
+
+</body>
+
+</html>
