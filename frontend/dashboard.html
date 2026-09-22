@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MedControl - Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    ✚
+                </div>
+
+                <div>
+                    <h1>
+                    Med<span>Tech</span></h1>
+                    <p>Seu tratamento, no horário certo.</p>
+                </div>
+
+            </div>
+
+
+            <!-- NAVEGAÇÃO -->
+            <nav class="navigation">
+
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon">▦</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">▣</span>
+                    <span>Medicamentos</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">◷</span>
+                    <span>Horários</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">▤</span>
+                    <span>Estoque</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">↩</span>
+                    <span>Histórico</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">♙</span>
+                    <span>Dispensador</span>
+                </a>
+
+            </nav>
+
+
+            <!-- PARTE INFERIOR DA SIDEBAR -->
+            <div class="sidebar-bottom">
+
+            
+
+                <div class="patient">
+
+                    <div class="patient-status">
+                        ●
+                    </div>
+
+                    <div>
+                        <strong>João Silva (Paciente)</strong>
+                        <span>Dispensador Conectado</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ÁREA PRINCIPAL -->
+        <div class="main-area">
+
+
+            <!-- HEADER -->
+            <header class="topbar">
+
+                <div class="topbar-brand">
+
+                    <strong>
+                        Med<span>Tech</span>
+                    </strong>
+
+                    <small>
+                        Residencial
+                    </small>
+
+                </div>
+
+
+                <div class="topbar-actions">
+
+                    <!-- PERFIL -->
+                    <div class="profile">
+
+                        <img
+                            src="./images/perfil.jpg"
+                            alt="Foto de João Silva"
+                        >
+
+                        <div>
+
+                            <strong>
+                                João Silva
+                            </strong>
+
+                            <span>
+                                74 anos • Paciente
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTEÚDO -->
+            <main class="content">
+
+
+                <!-- =========================
+                     BOAS-VINDAS
+                ========================== -->
+
+                <section class="welcome-card">
+
+
+                    <div class="welcome-text">
+
+        
+
+                        <h2>
+                            Bom dia, João! <span>👋</span>
+                        </h2>
+
+
+                        <p>
+                            Confira sua rotina de medicamentos de hoje.
+                        </p>
+
+                    </div>
+
+
+                    <div class="system-status">
+
+                        <strong>
+
+                            <span class="green-dot"></span>
+
+                            Sistema Ativo & Seguro
+
+                        </strong>
+
+                        <span class="separator">
+                            •
+                        </span>
+
+                        <span>
+                            Dispensador sincronizado às 08:02
+                        </span>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================
+                     CARDS DE RESUMO
+                ========================== -->
+
+                <section class="summary-grid">
+
+
+                    <!-- PRÓXIMO MEDICAMENTO -->
+
+                    <article class="summary-card next-medication">
+
+                        <div class="card-top">
+
+                            <strong>
+                                ⏱ PRÓXIMO
+                            </strong>
+
+                            <span class="badge pending">
+                                ⌛ Pendente
+                            </span>
+
+                        </div>
+
+
+                        <div class="next-time">
+                            14:00
+                        </div>
+
+
+                        <h3>
+                            Metformina
+                        </h3>
+
+
+                        <p>
+                            Dosagem:
+                            <strong>850 mg</strong>
+                            (1 Comprimido)
+                        </p>
+
+
+                        <!-- ÂNCORA -->
+                        <a href="#" class="take-button">
+
+                            ✓
+
+                            <span>
+                                Marcar como<br>
+                                tomado
+                            </span>
+
+                        </a>
+
+                    </article>
+
+
+
+                    <!-- ROTINA DO DIA -->
+
+                    <article class="summary-card">
+
+                        <div class="card-heading">
+
+                            <span class="blue-icon">
+                                ▣
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Rotina do<br>
+                                    Dia
+                                </strong>
+
+                                <span>
+                                    Progresso: 66%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dose-number">
+                            4 <small>/ 6 doses</small>
+                        </div>
+
+
+                        <p class="small-title">
+                            Meta de adesão diária
+                        </p>
+
+
+                        <div class="progress">
+                            <span></span>
+                        </div>
+
+
+                        <div class="mini-stats">
+
+                            <div class="taken">
+                                ✓4
+                                <small>Tomadas</small>
+                            </div>
+
+                            <div class="pending-stat">
+                                ◷1
+                                <small>Pendente</small>
+                            </div>
+
+                            <div class="scheduled">
+                                ◫1
+                                <small>Prevista</small>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- COMPARTIMENTOS -->
+
+                    <article class="summary-card">
+
+                        <div class="card-heading">
+
+                            <span class="blue-icon">
+                                ▣
+                            </span>
+
+                            <strong>
+                                Compartimentos
+                            </strong>
+
+                            <span class="badge normal">
+                                ● Normal
+                            </span>
+
+                        </div>
+
+
+                        <div class="stock-number">
+                            68 <small>doses</small>
+                        </div>
+
+
+                        <p class="capacity">
+                            Capacidade total: 84 doses
+                        </p>
+
+
+                        <div class="stock-message">
+
+                            <strong>
+                                ✿
+                            </strong>
+
+                            <div>
+
+                                <b>
+                                    Nenhum<br>
+                                    medicamento<br>
+                                    zerado
+                                </b>
+
+                                <span>
+                                    Próxima reposição prevista em 12 dias
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- HARDWARE -->
+
+                    <article class="summary-card hardware-card">
+
+                        <div class="card-heading">
+
+                            <span class="blue-icon">
+                                ♧
+                            </span>
+
+                            <strong>
+                                Hardware<br>
+                                IoT
+                            </strong>
+
+                            <span class="badge online">
+                                ● Online
+                            </span>
+
+                        </div>
+
+
+                        <div class="hardware-info">
+
+                            <div>
+
+                                <span>
+                                    Bateria do<br>
+                                    Dispensador
+                                </span>
+
+                                <strong>
+                                    ▮ 87%
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Sinal Wi-Fi
+                                </span>
+
+                                <strong class="wifi">
+                                    ⌁ Excelente
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="next-automatic">
+
+                            ♙
+
+                            <span>
+                                Próxima ejeção<br>
+                                automática<br>
+                                preparada
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+
+                <!-- =========================
+                     PARTE INFERIOR
+                ========================== -->
+
+                <section class="bottom-grid">
+
+
+                    <!-- AGENDA -->
+
+                    <div class="schedule-section">
+
+
+                        <div class="section-heading">
+
+
+                            <div class="section-title">
+
+                                <div class="section-icon">
+                                    ▣
+                                </div>
+
+
+                                <div>
+
+                                    <h2>
+                                        Agenda de hoje
+                                    </h2>
+
+                                    <p>
+                                        Horários das dosagens organizadas cronologicamente
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <span class="scheduled-count">
+                                5 Tomadas Previstas
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- LISTA DE MEDICAMENTOS -->
+
+                        <div class="medication-list">
+
+
+                            <!-- 08:00 -->
+
+                            <article class="medication-row taken-row">
+
+                                <div class="time">
+
+                                    <strong>
+                                        08:00
+                                    </strong>
+
+                                    <span>
+                                        Manhã
+                                    </span>
+
+                                </div>
+
+
+                                <div class="med-info">
+
+                                    <strong>
+                                        Losartana
+                                    </strong>
+
+                                    <span>
+                                        50 mg • 1 Comprimido com água
+                                    </span>
+
+                                </div>
+
+
+                                <div class="med-status">
+
+                                    <span class="status taken-status">
+                                        ● &nbsp; Tomado
+                                    </span>
+
+                                    <small>
+                                        ✓ Tomado às 08:02
+                                    </small>
+
+                                </div>
+
+
+                                <span class="arrow">
+                                    ›
+                                </span>
+
+                            </article>
+
+
+
+                            <!-- 12:00 -->
+
+                            <article class="medication-row taken-row">
+
+                                <div class="time">
+
+                                    <strong>
+                                        12:00
+                                    </strong>
+
+                                    <span>
+                                        Almoço
+                                    </span>
+
+                                </div>
+
+
+                                <div class="med-info">
+
+                                    <strong>
+                                        Vitamina D
+                                    </strong>
+
+                                    <span>
+                                        Gotas sublinguais • Junto à refeição
+                                    </span>
+
+                                </div>
+
+
+                                <div class="med-status">
+
+                                    <span class="status taken-status">
+                                        ● &nbsp; Tomado
+                                    </span>
+
+                                    <small>
+                                        ✓ Tomado às 12:05
+                                    </small>
+
+                                </div>
+
+
+                                <span class="arrow">
+                                    ›
+                                </span>
+
+                            </article>
+
+
+
+                            <!-- 14:00 -->
+
+                            <article class="medication-row pending-row">
+
+                                <div class="time">
+
+                                    <strong>
+                                        14:00
+                                    </strong>
+
+                                    <span>
+                                        Tarde
+                                    </span>
+
+                                </div>
+
+
+                                <div class="med-info">
+
+                                    <strong>
+
+                                        Metformina
+
+                                        <em>
+                                            Gaveta 3
+                                        </em>
+
+                                    </strong>
+
+
+                                    <span>
+                                        850 mg • Aguardando dispensador / paciente
+                                    </span>
+
+                                </div>
+
+
+                                <div class="med-status">
+
+                                    <span class="status pending-status">
+                                        ⌛ &nbsp; Pendente
+                                    </span>
+
+                                    <a href="#">
+                                        Dispensar agora
+                                    </a>
+
+                                </div>
+
+
+                                <span class="arrow">
+                                    ›
+                                </span>
+
+                            </article>
+
+
+
+                            <!-- 18:00 -->
+
+                            <article class="medication-row scheduled-row">
+
+                                <div class="time">
+
+                                    <strong>
+                                        18:00
+                                    </strong>
+
+                                    <span>
+                                        Entardecer
+                                    </span>
+
+                                </div>
+
+
+                                <div class="med-info">
+
+                                    <strong>
+                                        Losartana
+                                    </strong>
+
+                                    <span>
+                                        50 mg • Segunda dose diária
+                                    </span>
+
+                                </div>
+
+
+                                <div class="med-status">
+
+                                    <span class="status scheduled-status">
+                                        ◷ &nbsp; Programado
+                                    </span>
+
+                                    <small>
+                                        Alarme automático
+                                    </small>
+
+                                </div>
+
+
+                                <span class="arrow">
+                                    ›
+                                </span>
+
+                            </article>
+
+
+
+                            <!-- 22:00 -->
+
+                            <article class="medication-row scheduled-row">
+
+                                <div class="time">
+
+                                    <strong>
+                                        22:00
+                                    </strong>
+
+                                    <span>
+                                        Noite
+                                    </span>
+
+                                </div>
+
+
+                                <div class="med-info">
+
+                                    <strong>
+                                        Xarope
+                                    </strong>
+
+                                    <span>
+                                        5 mL • Copo dosador antes de dormir
+                                    </span>
+
+                                </div>
+
+
+                                <div class="med-status">
+
+                                    <span class="status scheduled-status">
+                                        ◷ &nbsp; Programado
+                                    </span>
+
+                                    <small>
+                                        Gaveta 5 preparada
+                                    </small>
+
+                                </div>
+
+
+                                <span class="arrow">
+                                    ›
+                                </span>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =========================
+                         COLUNA DIREITA
+                    ========================== -->
+
+                    <aside class="right-column">
+
+
+                        <!-- PULSEIRA -->
+
+                        <article class="side-card bracelet-card">
+
+
+                            <div class="side-card-title">
+
+                                <div class="side-icon">
+                                    ♧
+                                </div>
+
+
+                                <div>
+
+                                    <h3>
+                                        Pulseira<br>
+                                        Inteligente
+                                    </h3>
+
+                                    <span>
+                                        Dispositivo de pulso IoT
+                                    </span>
+
+                                </div>
+
+
+                                <span class="badge connected">
+                                    ● Conectada
+                                </span>
+
+                            </div>
+
+
+                            <div class="side-divider"></div>
+
+
+                            <div class="bracelet-stats">
+
+
+                                <div>
+
+                                    <span>
+                                        Bateria
+                                    </span>
+
+                                    <strong>
+                                        ▮ 72%
+                                    </strong>
+
+                                    <small>
+                                        Autonomia: 4 dias
+                                    </small>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Bluetooth
+                                    </span>
+
+                                    <strong>
+                                        ⌁ Ativo
+                                    </strong>
+
+                                    <small>
+                                        Sinal forte
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="alerts">
+
+                                <strong>
+                                    ⚑ Alertas Ativados
+                                </strong>
+
+                                <p>
+                                    Vibração tátil e aviso sonoro
+                                    sincronizados em tempo real com
+                                    o dispensador físico nos momentos
+                                    de medicação.
+                                </p>
+
+                            </div>
+
+
+                            <!-- ÂNCORA -->
+                            <a href="#" class="test-button">
+                                ♧ &nbsp; Testar Vibração da Pulseira
+                            </a>
+
+                        </article>
+
+
+
+                        <!-- CUIDADORA -->
+
+                        <article class="side-card caregiver-card">
+
+
+                            <div class="side-card-title">
+
+                                <div class="caregiver-icon">
+                                    ♧
+                                </div>
+
+
+                                <div>
+
+                                    <h3>
+                                        Cuidadora Responsável
+                                    </h3>
+
+                                    <span>
+                                        Mariana Silva (Filha)
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="notification-card">
+
+                                ✓ &nbsp;
+
+                                Notificada das doses<br>
+
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                matinais
+
+                                <strong>
+                                    08:03
+                                </strong>
+
+                            </div>
+
+
+                            <!-- ÂNCORA -->
+                            <a href="#" class="message-button">
+                                ▣ &nbsp; Enviar Mensagem para Mariana
+                            </a>
+
+                        </article>
+
+                    </aside>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
