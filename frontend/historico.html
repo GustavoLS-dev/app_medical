@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Histórico</title>
+
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="historico.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <link rel="stylesheet" href="sidebar.html">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="topbar">
+
+    <!-- TÍTULO DA PÁGINA -->
+    <div class="topbar-left">
+        <h1>Histórico</h1>
+    </div>
+
+
+    <!-- PARTE DIREITA -->
+    <div class="topbar-right">
+
+        <!-- AJUDA -->
+        <a href="#" class="help-button">
+            <span class="help-icon">?</span>
+            <span>Ajuda Rápida</span>
+        </a>
+
+
+        <!-- NOTIFICAÇÕES -->
+        <a href="#" class="notification-button">
+
+            <span class="notification-icon">♧</span>
+
+            <i class="notification-dot"></i>
+
+        </a>
+
+
+        <!-- USUÁRIO -->
+        <a href="#" class="user-area">
+
+            <span class="user-avatar">
+                JS
+            </span>
+
+            <span class="user-info">
+
+                <strong>João Silva</strong>
+
+                <span>
+                    74 anos • Hipertenso
+                </span>
+
+            </span>
+
+            <span class="user-arrow">
+                ⌄
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+    <!-- =====================================================
+         CONTEÚDO
+    ====================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             CABEÇALHO DA PÁGINA
+        ================================================== -->
+
+        <section class="page-header">
+
+            <div class="page-title">
+
+                <span class="page-label">
+                    GERENCIAMENTO
+                </span>
+
+                <h2>
+                    Histórico
+                </h2>
+
+                <p>
+                    Veja o histórico das suas doses.
+                </p>
+
+            </div>
+
+
+            <!-- FILTRO DE DATA -->
+
+            <a href="periodo.html"
+               class="date-filter">
+
+                <span class="date-icon">
+                    ▣
+                </span>
+
+                <span>
+                    Últimos 14 dias (01/09 - 15/09)
+                </span>
+
+                <span class="date-arrow">
+                    ⌄
+                </span>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CARDS DE RESUMO
+        ================================================== -->
+
+        <section class="summary-grid">
+
+
+            <!-- =================================================
+                 CARD DE ADESÃO
+            ================================================== -->
+
+            <div class="adherence-card">
+
+                <!-- CÍRCULO -->
+
+                <div class="circle-progress">
+
+                    <div class="circle-inner">
+
+                        <strong>
+                            92%
+                        </strong>
+
+                        <span>
+                            ADESÃO
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INFORMAÇÕES -->
+
+                <div class="adherence-content">
+
+                    <div class="success-label">
+                        ● Excelente Conformidade
+                    </div>
+
+                    <h3>
+                        92% de adesão ao tratamento
+                    </h3>
+
+                    <p>
+                        46 doses tomadas no horário correto
+                        nos últimos 14 dias. Seu compromisso
+                        mantém sua saúde cardiovascular estável.
+                    </p>
+
+                </div>
+
+
+                <!-- META -->
+
+                <div class="goal-info">
+
+                    <span>
+                        Meta do Médico
+                    </span>
+
+                    <strong>
+                        ≥ 85%
+                    </strong>
+
+                    <span>
+                        Doses Totais
+                    </span>
+
+                    <a href="doses.html"
+                       class="prescribed-link">
+
+                        50 prescritas
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CARD DOSES TOMADAS
+            ================================================== -->
+
+            <a href="historico.html?status=tomado"
+               class="small-card">
+
+                <div class="card-top">
+
+                    <div class="card-icon green">
+                        ✓
+                    </div>
+
+                    <span class="status-label green-label">
+                        No horário
+                    </span>
+
+                </div>
+
+                <strong class="big-number">
+                    46
+                </strong>
+
+                <span class="card-description">
+                    Doses Tomadas
+                </span>
+
+            </a>
+
+
+
+            <!-- =================================================
+                 CARD FALHAS
+            ================================================== -->
+
+            <a href="historico.html?status=falha"
+               class="small-card">
+
+                <div class="card-top">
+
+                    <div class="card-icon red">
+                        !
+                    </div>
+
+                    <span class="status-label red-label">
+                        Atenção
+                    </span>
+
+                </div>
+
+                <strong class="big-number">
+                    4
+                </strong>
+
+                <span class="card-description">
+                    Falhas ou Atrasos
+                </span>
+
+            </a>
+
+
+
+            <!-- =================================================
+                 CARD SEQUÊNCIA
+            ================================================== -->
+
+            <div class="streak-card">
+
+                <div class="streak-icon">
+                    ♨
+                </div>
+
+                <div class="streak-content">
+
+                    <strong>
+                        Sequência Atual: 5 dias seguidos
+                    </strong>
+
+                    <span>
+                        Nenhum esquecimento registrado desde
+                        quarta-feira.
+                    </span>
+
+                </div>
+
+                <a href="#"
+                   class="streak-close"
+                   aria-label="Fechar">
+
+                    ×
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FILTROS
+        ================================================== -->
+
+        <section class="filters">
+
+            <!-- TÍTULO -->
+
+            <div class="filter-title">
+
+                <span class="filter-icon">
+                    ☷
+                </span>
+
+                <span>
+                    Filtrar por Status:
+                </span>
+
+            </div>
+
+
+            <!-- BOTÕES COMO ÂNCORAS -->
+
+            <div class="filter-buttons">
+
+                <!-- TODOS -->
+
+                <a href="historico.html?status=todos"
+                   class="filter-btn active">
+
+                    ▦ Todos (50)
+
+                </a>
+
+
+                <!-- TOMADOS -->
+
+                <a href="historico.html?status=tomado"
+                   class="filter-btn taken">
+
+                    ● Tomados (46)
+
+                </a>
+
+
+                <!-- PENDENTES -->
+
+                <a href="historico.html?status=pendente"
+                   class="filter-btn pending">
+
+                    ● Pendentes (1)
+
+                </a>
+
+
+                <!-- ESQUECIDOS -->
+
+                <a href="historico.html?status=esquecido"
+                   class="filter-btn missed">
+
+                    ● Esquecidos (3)
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TABELA
+        ================================================== -->
+
+        <section class="table-container">
+
+            <table>
+
+                <!-- CABEÇALHO -->
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            DATA
+                        </th>
+
+                        <th>
+                            HORÁRIO
+                        </th>
+
+                        <th>
+                            MEDICAMENTO
+                        </th>
+
+                        <th>
+                            COMPARTIMENTO
+                        </th>
+
+                        <th>
+                            STATUS
+                        </th>
+
+                        <th>
+                            OBSERVAÇÃO
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <!-- CORPO -->
+
+                <tbody id="historyTable">
+
+
+                    <!-- LINHA 1 -->
+
+                    <tr data-status="tomado">
+
+                        <td>
+
+                            <strong>
+                                15/09
+                            </strong>
+
+                            <small>
+                                Hoje
+                            </small>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=1"
+                               class="time">
+
+                                08:00
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="medicine">
+
+                                <div class="medicine-icon blue">
+                                    ◇
+                                </div>
+
+                                <div class="medicine-info">
+
+                                    <a href="medicamento.html?id=1"
+                                       class="medicine-link">
+
+                                        <strong>
+                                            Losartana 50 mg
+                                        </strong>
+
+                                    </a>
+
+                                    <small>
+                                        1 Comprimido revestido
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dispensador.html?gaveta=1"
+                               class="compartment">
+
+                                ▣ Gaveta 1
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=1"
+                               class="status taken-status">
+
+                                ● Tomado
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=1"
+                               class="observation green-observation">
+
+                                <span class="observation-icon">
+                                    ◉
+                                </span>
+
+                                <span>
+                                    Tomado no horário<br>
+                                    correto
+                                </span>
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- LINHA 2 -->
+
+                    <tr data-status="tomado">
+
+                        <td>
+
+                            <strong>
+                                15/09
+                            </strong>
+
+                            <small>
+                                Hoje
+                            </small>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=2"
+                               class="time">
+
+                                12:00
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="medicine">
+
+                                <div class="medicine-icon blue">
+                                    ◇
+                                </div>
+
+                                <div class="medicine-info">
+
+                                    <a href="medicamento.html?id=2"
+                                       class="medicine-link">
+
+                                        <strong>
+                                            Vitamina D 1000 UI
+                                        </strong>
+
+                                    </a>
+
+                                    <small>
+                                        1 Cápsula gelatinosa
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dispensador.html?gaveta=3"
+                               class="compartment">
+
+                                ▣ Gaveta 3
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=2"
+                               class="status taken-status">
+
+                                ● Tomado
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=2"
+                               class="observation blue-observation">
+
+                                <span class="observation-icon">
+                                    ◈
+                                </span>
+
+                                <span>
+                                    Dispensado<br>
+                                    automaticamente
+                                </span>
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- LINHA 3 -->
+
+                    <tr data-status="pendente">
+
+                        <td>
+
+                            <strong>
+                                15/09
+                            </strong>
+
+                            <small>
+                                Hoje
+                            </small>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=3"
+                               class="time">
+
+                                14:00
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="medicine">
+
+                                <div class="medicine-icon yellow">
+                                    ◇
+                                </div>
+
+                                <div class="medicine-info">
+
+                                    <a href="medicamento.html?id=3"
+                                       class="medicine-link">
+
+                                        <strong>
+                                            Metformina 850 mg
+                                        </strong>
+
+                                    </a>
+
+                                    <small>
+                                        1 Comprimido - liberação
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dispensador.html?gaveta=2"
+                               class="compartment">
+
+                                ▣ Gaveta 2
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=3"
+                               class="status pending-status">
+
+                                ⌛ Pendente
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=3"
+                               class="observation yellow-observation">
+
+                                <span class="observation-icon">
+                                    ♧
+                                </span>
+
+                                <span>
+                                    Alarme soou há 10 min
+                                </span>
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- LINHA 4 -->
+
+                    <tr data-status="esquecido">
+
+                        <td>
+
+                            <strong>
+                                14/09
+                            </strong>
+
+                            <small>
+                                Ontem
+                            </small>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=4"
+                               class="time">
+
+                                22:00
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="medicine">
+
+                                <div class="medicine-icon red">
+                                    ▤
+                                </div>
+
+                                <div class="medicine-info">
+
+                                    <a href="medicamento.html?id=4"
+                                       class="medicine-link">
+
+                                        <strong>
+                                            Xarope 5 mL
+                                        </strong>
+
+                                    </a>
+
+                                    <small>
+                                        Antialérgico oral
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dispensador.html?externo=true"
+                               class="compartment external">
+
+                                ♧ Frasco externo
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=4"
+                               class="status missed-status">
+
+                                ● Esquecido
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=4"
+                               class="observation red-observation">
+
+                                <span class="observation-icon">
+                                    !
+                                </span>
+
+                                <span>
+                                    Dose não confirmada<br>
+                                    pelo usuário
+                                </span>
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- LINHA 5 -->
+
+                    <tr data-status="tomado">
+
+                        <td>
+
+                            <strong>
+                                14/09
+                            </strong>
+
+                            <small>
+                                Ontem
+                            </small>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=5"
+                               class="time">
+
+                                18:00
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <div class="medicine">
+
+                                <div class="medicine-icon blue">
+                                    ◇
+                                </div>
+
+                                <div class="medicine-info">
+
+                                    <a href="medicamento.html?id=1"
+                                       class="medicine-link">
+
+                                        <strong>
+                                            Losartana 50 mg
+                                        </strong>
+
+                                    </a>
+
+                                    <small>
+                                        1 Comprimido revestido
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dispensador.html?gaveta=1"
+                               class="compartment">
+
+                                ▣ Gaveta 1
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=5"
+                               class="status taken-status">
+
+                                ● Tomado
+
+                            </a>
+
+                        </td>
+
+
+                        <td>
+
+                            <a href="dose.html?id=5"
+                               class="observation green-observation">
+
+                                <span class="observation-icon">
+                                    ⌁
+                                </span>
+
+                                <span>
+                                    Confirmado via<br>
+                                    dispensador
+                                </span>
+
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+            <!-- =================================================
+                 RODAPÉ DA TABELA
+            ================================================== -->
+
+            <div class="table-footer">
+
+                <!-- RESULTADOS -->
+
+                <span class="results">
+
+                    Mostrando
+
+                    <strong>
+                        1
+                    </strong>
+
+                    -
+
+                    <strong>
+                        5
+                    </strong>
+
+                    de
+
+                    <strong>
+                        50
+                    </strong>
+
+                    doses registradas
+
+                </span>
+
+
+                <!-- PAGINAÇÃO -->
+
+                <div class="pagination">
+
+                    <a href="historico.html?page=1"
+                       class="page-arrow"
+                       aria-label="Página anterior">
+
+                        ‹
+
+                    </a>
+
+
+                    <a href="historico.html?page=1"
+                       class="page-number active-page">
+
+                        1
+
+                    </a>
+
+
+                    <a href="historico.html?page=2"
+                       class="page-number">
+
+                        2
+
+                    </a>
+
+
+                    <a href="historico.html?page=3"
+                       class="page-number">
+
+                        3
+
+                    </a>
+
+
+                    <a href="historico.html?page=2"
+                       class="page-arrow"
+                       aria-label="Próxima página">
+
+                        ›
+
+                    </a>
+
+                </div>
+
+
+                <!-- EXPORTAR -->
+
+                <a href="relatorio.html"
+                   class="export-button">
+
+                    <span>
+                        ▣
+                    </span>
+
+                    Exportar relatório médico (PDF)
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="historico.js"></script>
+    <script src="sidebar.js"></script>
+
+</body>
+
+</html>
